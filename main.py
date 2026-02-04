@@ -26,7 +26,7 @@ async def add_todo(todo: Todo):
 async def get_todos():
     conn = get_connection()
     c = conn.cursor()
-    c.execute("SELECT * FROM demo")
+    c.execute("SELECT * FROM task")
     rows = c.fetchall()
     conn.close()
 
