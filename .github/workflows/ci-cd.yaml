@@ -1,0 +1,6 @@
+- name: FastAPI import test
+  run: |
+    python - <<EOF
+    from main import app
+    print("FastAPI app loaded successfully")
+    EOF
