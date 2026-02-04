@@ -25,9 +25,10 @@ jobs:
 
       - name: Verify FastAPI app
         run: |
-          python main.py || echo "FastAPI file exists and executed"
-
-          EOF
+          ls -l
+          python --version
+          test -f main.py
+          echo "main.py exists"
 
       - name: Set up Docker
         uses: docker/setup-buildx-action@v2
